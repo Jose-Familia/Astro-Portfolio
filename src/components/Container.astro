@@ -8,22 +8,6 @@ import Card from "./Card.astro";
   <AccordionLayout title={"About"} icon={"mdi:account-badge-outline"}>
     {CONTENT.about}
   </AccordionLayout>
-    <AccordionLayout title={"Work"} icon={"ic:baseline-work-outline"}>
-      {
-        CONTENT.work.map((item) => {
-          return (
-            <Card
-              title={item.role}
-              timeframe={`${item.from} - ${item.to}`}
-              description={item.location}
-              tags={item.skills}
-              url={item.org_url}
-              url_name={item.org}
-            />
-          );
-        })
-      }
-    </AccordionLayout>
 
     <AccordionLayout title={"Projects"} icon={"ion:md-build"}>
       {
@@ -31,7 +15,7 @@ import Card from "./Card.astro";
           return (
             <Card
               title={item.title}
-              timeframe="2022-2023"
+              timeframe="2023"
               description={item.description}
               tags={item.tech}
               url={item.url}
@@ -70,40 +54,6 @@ import Card from "./Card.astro";
               tags={item.description}
               url={item.url}
               url_name={"View Certificate"}
-            />
-          );
-        })
-      }
-    </AccordionLayout>
-
-    <AccordionLayout title={"Blogs/Writings"} icon={"ic:round-edit-note"}>
-      {
-        CONTENT.blogs.map((item) => {
-          return (
-            <Card
-              title={item.title}
-              timeframe={item.date}
-              description={item.description}
-              tags=""
-              url={item.url}
-              url_name={item.publisher}
-            />
-          );
-        })
-      }
-    </AccordionLayout>
-
-    <AccordionLayout title={"Achievements"} icon={"mdi:trophy-award"}>
-      {
-        CONTENT.achievements.map((item) => {
-          return (
-            <Card
-              title={item.title}
-              timeframe={item.year}
-              description={item.decription}
-              tags=""
-              url="#"
-              url_name=""
             />
           );
         })
