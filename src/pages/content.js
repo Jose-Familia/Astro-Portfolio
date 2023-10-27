@@ -8,8 +8,6 @@ export const website = "https://github.com/Jose-Familia"
 // About
 export const about = "I am Jose Rene Familia, a second year student of Computer Systems Engineering at UNAPEC, Santo Domingo, Dominican Republic. My passion for technology motivates me to constantly learn and improve my skills in software and hardware development."
 
-// Work Experience --> #work section
-
 // Projects --> #project section
 export const projects = [
 	{
