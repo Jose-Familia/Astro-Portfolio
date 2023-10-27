@@ -89,6 +89,6 @@ export const certificates = [
 		org: "Google",
 		url: "",
 		description: "Theoretical introduction to the foundations of web development.",
-	}
+	},
 ]
 
